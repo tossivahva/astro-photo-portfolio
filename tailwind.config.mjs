@@ -4,6 +4,14 @@ export default {
         './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
     ],
     theme: {
+        colors: {
+            'background': '#000',
+            'background-secondary': '#161617cc',
+            'white': '#fff',
+            'textBlack': '#1d1d1f',
+            'textWhite': '#f5f5f7',
+            'textDim': '#a1a1a6',
+        },
         extend: {},
     },
     plugins: [],

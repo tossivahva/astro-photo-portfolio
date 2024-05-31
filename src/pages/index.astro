@@ -1,5 +1,5 @@
 ---
-
+import { Button } from '../components/Button';
 ---
 
 <html lang='en'>
@@ -21,8 +21,17 @@
         <title>Astro</title>
     </head>
     <body>
-        <p>Hero with text</p>
-        <p>Carousel</p>
-        <p>Small carousels</p>
+        <header>Header</header>
+        <main>
+            <div class='bg-background w-full h-20 flex justify-center items-center'>
+                <div class='container h-full w-full flex items-center justify-between'>
+                    <p class='text-xl text-white'>Hero with text</p>
+                    <Button size="small">Photo+</Button>
+                </div>
+            </div>
+            
+            <div>Carousel</div>
+            <div>Small carousels</div>
+        </main>
     </body>
 </html>
