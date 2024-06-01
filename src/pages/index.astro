@@ -1,5 +1,9 @@
 ---
-import { Button } from '../components/Button';
+import Button from '../components/Button';
+import Container from '../components/Container';
+import Hero from '../components/Hero';
+import Tags from '../components/Tags';
+import Carousel from '../components/Carousel';
 ---
 
 <html lang='en'>
@@ -21,17 +25,13 @@ import { Button } from '../components/Button';
         <title>Astro</title>
     </head>
     <body>
-        <header>Header</header>
         <main>
-            <div class='bg-background w-full h-20 flex justify-center items-center'>
-                <div class='container h-full w-full flex items-center justify-between'>
-                    <p class='text-xl text-white'>Hero with text</p>
-                    <Button size="small">Photo+</Button>
-                </div>
+            <div class='bg-background'>
+                <Hero client:load/>
+                <Tags client:load/>
             </div>
-            
-            <div>Carousel</div>
-            <div>Small carousels</div>
+            <Carousel client:load/>
+            <div class='h-[100vh] bg-blue-500'>Bottom</div>
         </main>
     </body>
 </html>
