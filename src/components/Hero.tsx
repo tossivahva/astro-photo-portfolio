@@ -18,7 +18,7 @@ const Hero = () => {
                 className='absolute top-0 left-0 w-full h-[150svh]'
             >
                 <img
-                    src='/images/family-a-1.jpg'
+                    src='/images/sony-1.webp'
                     alt='hero image'
                     className='sticky top-0 h-screen w-full object-cover'
                 />

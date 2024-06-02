@@ -26,12 +26,12 @@ import Carousel from '../components/Carousel';
     </head>
     <body>
         <main>
-            <div class='bg-background'>
+            <div class='bg-background relative z-10'>
                 <Hero client:load/>
                 <Tags client:load/>
             </div>
             <Carousel client:load/>
-            <div class='h-[100vh] bg-blue-500'>Bottom</div>
+            <div class='h-[100vh] bg-background text-white py-36 text-6xl'>Bottom</div>
         </main>
     </body>
 </html>
