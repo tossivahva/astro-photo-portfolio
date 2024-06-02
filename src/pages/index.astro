@@ -30,7 +30,7 @@ import Carousel from '../components/Carousel';
                 <Hero client:load/>
                 <Tags client:load/>
             </div>
-            <Carousel client:load/>
+            <Carousel client:only='react'/>
             <div class='h-[100vh] bg-background text-white py-36 text-6xl'>Bottom</div>
         </main>
     </body>
