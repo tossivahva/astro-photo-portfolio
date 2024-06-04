@@ -4,27 +4,29 @@ import FadeIn from './FadeIn.tsx';
 
 const Tags = () => {
     return (
-        <Container className='relative z-10 pb-36 text-white text-6xl leading-tight font-semibold space-y-10 flex flex-col justify-start'>
+        <Container className='relative z-10 pb-36 text-white text-7xl leading-tight font-semibold space-y-16 flex flex-col justify-start'>
             <FadeIn>
                 <p>
-                    New Apple Originals every month — always ad‑free.
+                    Профессиональная фотография <br/>
+                    и уникальные снимки.
                 </p>
             </FadeIn>
             <FadeIn>
                 <p>
-                    Stream on the Apple TV app on Apple devices, smart TVs,
-                    consoles,
-                    or sticks.
+                    Высококлассное оборудование <br/>
+                    для съемки.
                 </p>
             </FadeIn>
             <FadeIn>
                 <p>
-                    Watch in 4K HDR video with immersive Spatial Audio.
+                    Обработанные снимки <br/>
+                    высокого разрешения.
                 </p>
             </FadeIn>
             <FadeIn>
                 <p>
-                    Share a single subscription with up to five people.
+                    Разнообразные стили и сцены для <br/>
+                    воплощения самых смелых идей.
                 </p>
             </FadeIn>
         </Container>
