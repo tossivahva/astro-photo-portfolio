@@ -1,12 +1,12 @@
 import React, { useMemo, useRef, useState } from 'react';
 import { useWindowSize } from 'react-use';
 import {
-    type ImagesType,
     images,
     randomImagesSet1,
     randomImagesSet2,
 } from '../utils/images.ts';
 import { useScroll, useTransform, motion, useMotionValueEvent } from 'framer-motion';
+import SmallCarousel from './SmallCarousel.tsx';
 
 const Carousel = () => {
     const { width, height } = useWindowSize();
@@ -99,22 +99,6 @@ const Carousel = () => {
                 <SmallCarousel images={randomImagesSet2}/>
             </motion.div>
         </motion.div>
-    );
-};
-
-const SmallCarousel = ({ images }: { images: ImagesType[] }) => {
-    return (
-        <div className='flex gap-5 overflow-clip'>
-            {images.map((image, index) => (
-                <div className='w-[23vw] h-full aspect-video shrink-0'>
-                    <img
-                        className='w-full h-full object-cover rounded-xl'
-                        src={image.path}
-                        alt={image.name}
-                        key={index}
-                    /></div>
-            ))}
-        </div>
     );
 };
 

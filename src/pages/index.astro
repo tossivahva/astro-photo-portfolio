@@ -4,6 +4,7 @@ import Container from '../components/Container';
 import Hero from '../components/Hero';
 import Tags from '../components/Tags';
 import Carousel from '../components/Carousel';
+import SmallCarouselAnimated from '../components/SmallCarouselAnimated';
 ---
 
 <html lang='en'>
@@ -31,6 +32,7 @@ import Carousel from '../components/Carousel';
                 <Tags client:load/>
             </div>
             <Carousel client:only='react'/>
+            <SmallCarouselAnimated client:load/>
             <div class='h-[100vh] bg-background text-white py-36 text-6xl'>Bottom</div>
         </main>
     </body>
