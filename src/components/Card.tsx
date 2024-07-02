@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({ image }) => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                     >
-                        <div className='absolute pointer-events-none bg-black opacity-50 h-full w-full' />
+                        <div className='absolute pointer-events-none bg-black opacity-50 h-full w-full'/>
                         <motion.h1
                             className='z-10 bg-white rounded-full text-sm px-3 py-2 font-medium flex items-center justify-center hover:opacity-75 cursor-pointer'
                             initial={{ y: 10 }}
